@@ -1,13 +1,21 @@
 import React, { useState } from "react";
+import Image from "next/image";
+import SwiperSliders from "../components/Layouts/swiper";
 
-const Navbar = () => {
+
+
+export default function dummy() {
     const [show, setShow] = useState(false);
     const [technology, setTechnology] = useState(false);
     const [entertainment, setEntertainment] = useState(false);
+
     return (
-       <>
-             <div className={show ? "w-full h-full absolute z-40  transform  translate-x-0 " : "   w-full h-full absolute z-40  transform -translate-x-full"}>
-                <div className="bg-gray-800 opacity-50 inset-0 fixed w-full h-full" onClick={() => setShow(!show)} />
+        <>
+            <div className="absolute bg-white w-full h-full">
+                {/* Navigation starts */}
+                {/* Mobile */}
+                <div className={show ? "w-full h-full absolute z-40  transform  translate-x-0 " : "   w-full h-full absolute z-40  transform -translate-x-full"}>
+                    <div className="bg-gray-800 opacity-50 inset-0 fixed w-full h-full" onClick={() => setShow(!show)} />
                     <div className="w-64 z-20 absolute left-0 z-40 top-0 bg-white shadow flex-col justify-between transition duration-150 ease-in-out h-full">
                         <div className="flex flex-col justify-between h-full">
                             <div className="px-6 pt-4">
@@ -229,9 +237,203 @@ const Navbar = () => {
 
               
 
-       
-       </>
+                  
+                {/* Navigation ends */}
+                {/* Page title starts */}
+                
+                {/* Page title ends */}
+
+               
+               
+                <div className="container mx-auto flex flex-wrap px-6 pt-10">
+             
+                    {/* Remove class [ h-64 ] when adding a card block */}
+                    {/* Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border */}
+
+                           
+                 
+                    <section className="w-full md:w-2/3 flex flex-col items-center px-3">
+
+                        {/* blog start */}
+                        <div className="col-start-1 col-span-3 py-4 px-4 w-full flex justify-between bg-white gap-4 pb-6 border-b border-gray-200" >
+                                <h2 className="text-4xl font-extrabold tracking-tight text-gray-900
+                                    bg-gradient-to-r bg-clip-text  text-transparent 
+                                    from-indigo-500 via-purple-500 to-indigo-500"
+                                    animate-text='true'
+                                >#Entertainment<span className='text-sm text-gray-500 font-medium'> Recent </span>
+                                </h2>
+                            
+                            
+                  
+                        </div>
+
+                        
+                        <div className="grid grid-cols-1 pt-10 pb-10 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                  
+        
+                            <div className="transform translate-y-0 transition ease-in-out delay-150 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300">
+                                <a href="#">
+                                    <Image className="rounded-t-lg" src="https://i.ibb.co/Ms4qyXp/img-65.png" alt="feeblytech.com" width={500} height={300} />
+                                </a>
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021 </h5>
+                                    </a>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="transform translate-y-0 transition ease-in-out delay-150 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300">
+                                <a href="#">
+                                    <Image className="rounded-t-lg" src="https://i.ibb.co/Ms4qyXp/img-65.png" alt="feeblytech.com" width={500} height={300} />
+                                </a>
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    </a>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="transform translate-y-0 transition ease-in-out delay-150 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300">
+                                <a href="#">
+                                    <Image className="rounded-t-lg" src="https://i.ibb.co/Ms4qyXp/img-7.png" alt="feeblytech.com" width={500} height={300} />
+                                </a>
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    </a>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div className="transform translate-y-0 transition ease-in-out delay-150 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300">
+                                <a href="#">
+                                    <Image className="rounded-t-lg" src="https://i.ibb.co/Ms4qyXp/img-76.png" alt="feeblytech.com" width={500} height={300} />
+                                </a>
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    </a>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="transform translate-y-0 transition ease-in-out delay-150 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300">
+                                <a href="#">
+                                    <Image className="rounded-t-lg" src="https://i.ibb.co/Ms4qyXp/img-23.png" alt="feeblytech.com" width={500} height={300} />
+                                </a>
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    </a>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div className="transform translate-y-0 transition ease-in-out delay-150 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300">
+                                <a href="#">
+                                    <Image className="rounded-t-lg" src="https://i.ibb.co/Ms4qyXp/img-52.png" alt="feeblytech.com" width={500} height={300} />
+                                </a>
+                                <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    </a>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        {/* end blog */}
+                        
+
+                    </section>
+
+                    <aside className="w-full md:w-1/3 flex flex-col items-center px-3">
+                        <div className="col-start-1 col-span-3 py-4 px-4 w-full flex justify-between bg-violet-700 gap-3.5" >
+                            <p className="text-sm text-white font-semibold tracking-wide">Recent</p>
+                        </div>
+
+                       
+                        <div className="pt-10">
+                            <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-md hover:rounded-2xl">
+                                <img src="https://tailus.io/sources/blocks/twocards/preview/images/man.jpg" alt="art cover" loading="lazy" width="1000" height="667" className="h-34 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+                                <div className="sm:w-7/12 pl-0 p-5">
+                                    <div className="space-y-2">
+                                        <div className="space-y-4">
+                                            <h4 className="text-md font-semibold text-cyan-900">Provident de illo eveniet commodi fuga fugiat laboriosam expedita.</h4>
+                                        </div>
+                                        <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pt-10">
+                            <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-md hover:rounded-2xl">
+                                <img src="https://tailus.io/sources/blocks/twocards/preview/images/man.jpg" alt="art cover" loading="lazy" width="1000" height="667" className="h-34 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+                                <div className="sm:w-7/12 pl-0 p-5">
+                                    <div className="space-y-2">
+                                        <div className="space-y-4">
+                                            <h4 className="text-md font-semibold text-cyan-900">Provident de illo eveniet commodi fuga fugiat laboriosam expedita.</h4>
+                                        </div>
+                                        <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pt-10">
+                            <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-md hover:rounded-2xl">
+                                <img src="https://tailus.io/sources/blocks/twocards/preview/images/man.jpg" alt="art cover" loading="lazy" width="1000" height="667" className="h-34 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+                                <div className="sm:w-7/12 pl-0 p-5">
+                                    <div className="space-y-2">
+                                        <div className="space-y-4">
+                                            <h4 className="text-md font-semibold text-cyan-900">Provident de illo eveniet commodi fuga fugiat laboriosam expedita.</h4>
+                                        </div>
+                                        <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pt-10">
+                            <div className="p-1 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-md hover:rounded-2xl">
+                                <img src="https://tailus.io/sources/blocks/twocards/preview/images/man.jpg" alt="art cover" loading="lazy" width="1000" height="667" className="h-34 sm:h-full w-full sm:w-5/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl" />
+                                <div className="sm:w-7/12 pl-0 p-5">
+                                    <div className="space-y-2">
+                                        <div className="space-y-4">
+                                            <h4 className="text-md font-semibold text-cyan-900">Provident de illo eveniet commodi fuga fugiat laboriosam expedita.</h4>
+                                        </div>
+                                        <a href="www.tailus.io" className="block w-max text-cyan-600">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+
+                       
+
+                    </aside>
+
+
+                </div>
+            </div>
+        </>
     );
 }
-
-export default Navbar;

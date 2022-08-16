@@ -19,12 +19,7 @@ import Image from 'next/image';
 
 const SwiperSliders = () => {
     return (
-        <div className="col-start-1 col-span-2 transform translate-y-0 
-            transition ease-in-out delay-150  bg-white rounded-lg border 
-            border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  
-            hover:shadow-2xl hover:-translate-y-1 hover:scale-80  duration-300"           
-            data-swiper-parallax="-23%"
-        >
+        
             
             <Swiper
                 // install Swiper modules
@@ -50,13 +45,12 @@ const SwiperSliders = () => {
                         </SwiperSlide>
                         <SwiperSlide className='rounded-t-lg'><Image  src="/images/m2.jpg" alt="feeblytech.com"  layout='fill' /><span>Hello World</span></SwiperSlide>
                         <SwiperSlide className='rounded-t-lg'><Image  src="/images/m3.jpg" alt="feeblytech.com"  layout='fill'/></SwiperSlide>
-                        <SwiperSlide className='ounded-t-lg'><Image  src="/images/m4.jpg" alt="feeblytech.com"  layout='fill'/></SwiperSlide>
+                        <SwiperSlide className='rounded-t-lg'><Image  src="/images/m4.jpg" alt="feeblytech.com"  layout='fill'/></SwiperSlide>
 
                
 
             </Swiper>
             
-        </div>
     );
 }
 
