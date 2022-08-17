@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import RelatedContent from "../RelatedContent";
 const Footer = () => {
     const [mode, setMode] = useState("auto");
     return (
@@ -42,6 +43,7 @@ const Footer = () => {
                     </svg>
                 </div>
             </div>
+            
             <div className="flex items-center mt-6">
                 <p className="text-base leading-4 text-gray-800">
                     2022 <span className="font-semibold">Feeblytech</span>

@@ -1,16 +1,16 @@
 import React from "react";
 import Layout from "../components/Layouts/Layout";
-import Image from "next/image";
+import Header from "../components/Layouts/Header";
+
 import DashCards from "../components/DashCards";
-import SwiperSliders from "../components/Layouts/swiper";
-import GridCards from "../components/GridCards";
-import SliderCard from "../components/SliderCard";
+
 import RelatedContent from "../components/RelatedContent";
 import BreadCrump from "../components/BreadCrump";
 
 export default function blogdetail() {
   return (
     <Layout>
+            <Header header="Feeblytech"/>
             <BreadCrump>
                 <span>Dashboard</span>
                 <span className="mx-2">&gt;</span>
