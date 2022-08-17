@@ -13,6 +13,7 @@
     "@heroicons/react": "^1.0.6",
     "@tailwindcss/line-clamp": "^0.4.0",
     "next": "12.2.3",
+    "pure-react-carousel": "^1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^8.3.2"

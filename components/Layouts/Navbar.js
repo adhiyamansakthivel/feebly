@@ -21,7 +21,7 @@ const Navbar = () => {
                                                 />
                                             </g>
                                         </svg>
-                                        <p className="text-bold md:text2xl text-base pl-3 text-gray-800">The North</p>
+                                        <p className="text-bold md:text2xl text-base pl-3 text-gray-800">Feeblytech</p>
                                     </div>
                                     <div id="cross" className=" text-gray-800" onClick={() => setShow(!show)}>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-x" width={24} height={24} viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -172,9 +172,9 @@ const Navbar = () => {
                                 <li className="hover:text-white cursor-pointer h-full flex items-center font-bold text-sm text-white mx-10 tracking-normal relative" onClick={() => setTechnology(!technology)}>
                                     {technology ? (
                                         <ul className="bg-gray-800 shadow rounded py-1 w-32 left-0 mt-16 -ml-4 absolute  top-0">
-                                            <li className="cursor-pointer text-white text-sm leading-3 tracking-normal py-3 hover:bg-white  hover:text-gray-600 px-3 font-bold">Landing Pages</li>
-                                            <li className="cursor-pointer text-white text-sm leading-3 tracking-normal py-3 hover:bg-white  hover:text-gray-600 px-3 font-bold">Templates</li>
-                                            <li className="cursor-pointer text-white text-sm leading-3 tracking-normal py-3 hover:bg-white  hover:text-gray-600 px-3 font-bold">Components</li>
+                                            <li className="cursor-pointer text-white text-sm leading-3 tracking-normal py-3 hover:bg-white  hover:text-gray-600 px-3 font-bold">Tech News</li>
+                                            <li className="cursor-pointer text-white text-sm leading-3 tracking-normal py-3 hover:bg-white  hover:text-gray-600 px-3 font-bold">Apple News</li>
+                                            <li className="cursor-pointer text-white text-sm leading-3 tracking-normal py-3 hover:bg-white  hover:text-gray-600 px-3 font-bold">Google Tech News</li>
                                         </ul>
                                     ) : (
                                         ""
